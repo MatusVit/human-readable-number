@@ -15,8 +15,8 @@ module.exports = function toReadable(number) {
         return toNumbTens(number);
     }
     
-    // const numString = number.toString();
-    // if (numString.length === 3) {
-    //     return `${readNum.ones[numString[0]]} ${readNum.hundred} ${toNumbTens(+numString.slice(-2))}`;
-    // }
+    const numString = number.toString();
+    if (numString.length === 3) {
+        return `${readNum.ones[numString[0]]} ${readNum.hundred} ${toNumbTens(+numString.slice(-2))}`;
+    }
 }
